@@ -1,5 +1,6 @@
 # Summary
 
+* [Introduction](README.md)
 * [移动 App 自动化测试简述](auto_intro/auto_intro.md)
    * [移动 App 自动化测试的编年史](auto_intro/auto_intro_history.md)
    * [移动 App 自动化测试的追求](auto_intro/auto_intro_pursue.md)
@@ -26,10 +27,11 @@
    * [Apk 篇](use_appium/apk.md)
    * [iOS 篇](use_appium/ios.md)
    * [混合应用篇](use_appium/hybird.md)
+* [Appium Webdriver protocol](auto_intro/webdriver_protocal.md)
 * [Appium 原理篇](auto_intro/appium.md)
-   * [Appium Webdriver protocol](auto_intro/webdriver_protocal.md)
    * [Appium Android 原理](auto_intro/appium_android.md)
    * [Appium iOS 原理](auto_intro/appium_ios.md)
 * [Appium 高阶篇](auto_intro/appium.md)
    * [移动自动化 Test Design](auto_intro/test_design)
    * [Screen Object Pattern](auto_intro/screen_object_pattern)
+
