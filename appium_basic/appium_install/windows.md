@@ -4,13 +4,13 @@
 
 ## 局限性
 
-如果你在 windows 上安装 appium ，你没法使用预编译专用于 OS X 的.app文件，你也将不能测试 iOS 的应用，因为 appium 依赖 OS X 专用的库来支持 iOS 测试。这意味着你只能通过在 mac 运行 iOS 的应用测试。然而，你也可以通过 `Remote Server` 选项来远程连接你的 mac 执行 iOS 应用测试。
+如果你在 windows 上安装 appium ，你没法使用预编译专用于 OS X 的 .app 文件，你也将不能测试 iOS 的应用，因为 appium 依赖 OS X 专用的库来支持 iOS 测试。这意味着你只能通过在 mac 运行 iOS 的应用测试。然而，你也可以通过 `Remote Server` 选项来远程连接你的 mac 执行 iOS 应用测试。
 
 ## 开始安装
 
 一共有 3 种安装方式：通过源码安装，通过 npm 安装，通过 AppiumForWindows 安装。但无论使用哪种方式，首先都必须安装依赖库：
 
-1. 安装[nodejs](http://nodejs.org/download/) v0.10 版本及以上, 可通过官方的安装程序来安装。
+1. 安装 [nodejs](http://nodejs.org/download/) v0.10 版本及以上，可通过官方的安装程序来安装。
 
 2. 安装 [android sdk](http://developer.android.com/sdk/index.html)。你可以通过运行 sdk 中 tools 文件夹中的 'android' 程序启动 sdk 管理器，并确保你安装了 Level 17 或以上的版本的 api 。设置 `ANDROID_HOME` 系统变量为你的 Android SDK 路径，并把 tools platform-tools 两个目录加入到系统的 Path 路径里。因为这里面包含有一些执行命令。
 
@@ -26,12 +26,12 @@
 
 ### 通过源码安装
 
-1. 安装[Apache Ant](http://ant.apache.org/bindownload.cgi)
+1. 安装 [Apache Ant](http://ant.apache.org/bindownload.cgi) 
 或者直接使用 Android Windows SDK 自带的 ant ，地址在 eclipse\plugins 目录，你需要把这个目录加到你的系统 PATH 变量中
 
-2. 安装[Apache Maven](http://maven.apache.org/download.cgi). 并且设置 M2HOME 和 M2 环境变量，把M2环境变量添加到你的系统PATH变量中。
+2. 安装 [Apache Maven](http://maven.apache.org/download.cgi) 。 并且设置 M2HOME 和 M2 环境变量，把M2环境变量添加到你的系统PATH变量中。
 
-3. 安装[Git](http://git-scm.com/download/win). 确保你安装了windows下的Git，以便可以运行常用的command命令
+3. 安装 [Git](http://git-scm.com/download/win) 。 确保你安装了windows下的Git，以便可以运行常用的command命令
 
 现在，你已经下载安装了所有的依赖，运行
     reset.bat
@@ -68,9 +68,10 @@ info: Console LogLevel: debug
 
 ## 备注
 
-* 在windows系统下运行 appium.app 时，需要使用管理员权限；当你通过源码的形式运行 Appium 时，也需要使用管理员权限启动 CMD 。
+* 在windows系统下运行 appium.exe 时，需要使用管理员权限；当你通过源码的形式运行 Appium 时，也需要使用管理员权限启动 CMD 。
+
 * 在 windows 系统下运行 Android 项目时，启动Appium时请带上 `--no-reset` 或 `--full-reset` 参数。
 
 * 有一个硬件加速模拟器用于android，但是它有自己的一些限制，如果你想了解更多，请参考[页面](android-hax-emulator.cn.md)
-* 
+
 * 确保在你的AVD的 `config.ini` 中有一个配置项为 `hw.battery=yes` 。
